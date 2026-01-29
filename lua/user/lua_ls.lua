@@ -12,12 +12,12 @@ vim.api.nvim_create_autocmd('FileType', {
     local root_dir = vim.fs.root(args.buf, { 'Cargo.toml', 'rust-project.json' })
     
     if not root_dir then
-      vim.notify("Warning: No Cargo.toml found. Looking in: " .. vim.fn.getcwd(), vim.log.levels.WARN)
+      -- vim.notify("Warning: No Cargo.toml found. Looking in: " .. vim.fn.getcwd(), vim.log.levels.WARN)
       -- Try current directory as fallback
       root_dir = vim.fn.getcwd()
     end
     
-    vim.notify("Starting rust-analyzer in: " .. root_dir, vim.log.levels.INFO)
+    -- vim.notify("Starting rust-analyzer in: " .. root_dir, vim.log.levels.INFO)
     
     local client = vim.lsp.start({
       name = 'rust-analyzer',
@@ -25,7 +25,7 @@ vim.api.nvim_create_autocmd('FileType', {
       root_dir = root_dir,
       capabilities = capabilities,
       on_attach = function(client, bufnr)
-        vim.notify("rust-analyzer attached successfully!", vim.log.levels.INFO)
+        -- vim.notify("rust-analyzer attached successfully!", vim.log.levels.INFO)
       end,
       on_exit = function(code, signal, client_id)
         if code ~= 0 then
@@ -37,11 +37,11 @@ vim.api.nvim_create_autocmd('FileType', {
       end,
     })
     
-    if client then
-      vim.notify("rust-analyzer started (client id: " .. client .. ")", vim.log.levels.INFO)
-    else
-      vim.notify("Failed to start rust-analyzer!", vim.log.levels.ERROR)
-    end
+    -- if client then
+    --   vim.notify("rust-analyzer started (client id: " .. client .. ")", vim.log.levels.INFO)
+    -- else
+    --   vim.notify("Failed to start rust-analyzer!", vim.log.levels.ERROR)
+    -- end
   end,
 })
 
@@ -49,7 +49,7 @@ vim.api.nvim_create_autocmd('FileType', {
 vim.api.nvim_create_autocmd('LspAttach', {
   callback = function(ev)
     local client = vim.lsp.get_client_by_id(ev.data.client_id)
-    vim.notify("LSP attached: " .. client.name, vim.log.levels.INFO)
+    -- vim.notify("LSP attached: " .. client.name, vim.log.levels.INFO)
     
     local opts = { buffer = ev.buf }
     
@@ -82,6 +82,6 @@ vim.api.nvim_create_user_command('LspLog', function()
   vim.cmd('edit ' .. vim.lsp.get_log_path())
 end, {})
 
-print("LSP config loaded - rust-analyzer will start on .rs files")
-print("LSP log: " .. vim.lsp.get_log_path())
-print("Use :LspLog to view the log, :LspRestart to restart")
+-- print("LSP config loaded - rust-analyzer will start on .rs files")
+-- print("LSP log: " .. vim.lsp.get_log_path())
+-- print("Use :LspLog to view the log, :LspRestart to restart")
