@@ -10,7 +10,7 @@ vim.call('plug#begin')
 -- >> Dependencies << --
 Plug ('nvim-lua/plenary.nvim')
 Plug ('neovim/nvim-lspconfig')
-Plug ('williamboman/mason.nvim')
+Plug ('williamboman/mason.nvim',{['do'] =':MasonUpdate'})
 Plug ('williamboman/mason-lspconfig.nvim')
 
 -- >> Autocompletion << --
@@ -20,8 +20,8 @@ Plug ('hrsh7th/cmp-nvim-lsp')
 Plug ('hrsh7th/cmp-buffer')
 Plug ('hrsh7th/cmp-path')
 Plug ('hrsh7th/cmp-cmdline')
-Plug 'L3MON4D3/LuaSnip'
-Plug 'saadparwaiz1/cmp_luasnip'
+Plug ('saadparwaiz1/cmp_luasnip')
+Plug ('L3MON4D3/LuaSnip')
 
 -- Settings and Colors
 Plug ('tpope/vim-sensible') -- Good Default Settings
@@ -51,3 +51,4 @@ Plug ('ThePrimeagen/vim-be-good') -- Vim Practicer
 vim.call('plug#end')
 
 require('Comment').setup()
+require('mason').setup()
