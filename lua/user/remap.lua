@@ -31,8 +31,5 @@ vim.keymap.set("n", "<leader>tn", vim.cmd.tabp)
 vim.keymap.set("n", "<leader>tp", vim.cmd.tabn)
 vim.keymap.set("n", "<leader>tc", vim.cmd.tabc)
 
--- vim.api.nvim_set_keymap('i', '<C-W>', '<C-H>', {noremap = false})
--- vim.api.nvim_set_keymap('i', '<C-BS>', '<Esc>caw', {noremap = true})
-
 -- Clipboard
 -- set clipboard = unnamedplus

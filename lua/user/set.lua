@@ -12,11 +12,6 @@ vop.expandtab = true
 
 vop.wrap = false
 
---o.swapfile = false
---o.backup = false
---o.undodir = os.getenv("HOME") .. "/.vim/undodir"
---o.undofile = true
-
 vop.hlsearch = false
 vop.incsearch = true
 
@@ -28,6 +23,4 @@ vop.isfname:append("@-@")
 
 vop.updatetime = 50
 
-vop.colorcolumn = "80"
-
--- vim.opt.winborder = 'rounded'
+vop.colorcolumn = "70"

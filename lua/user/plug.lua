@@ -5,7 +5,6 @@ local Plug = vim.fn['plug#']
 
 vim.call('plug#begin')
 -------------------------------------------------------------------------------
-
 -- LSP's, DAP's, and Autocomplete
 -- >> Dependencies << --
 Plug ('nvim-lua/plenary.nvim')
@@ -43,12 +42,5 @@ Plug ('mfussenegger/nvim-jdtls')
 -- Fun Plugins
 Plug ('ThePrimeagen/vim-be-good') -- Vim Practicer
 
-
-
--- Plug ('Saghen/blink.cmp')
-
 -------------------------------------------------------------------------------
 vim.call('plug#end')
-
-require('Comment').setup()
-require('mason').setup()

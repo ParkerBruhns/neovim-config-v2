@@ -41,7 +41,7 @@ cmp.setup({
         end, { "i", "s" }),
         ["<C-d>"] = cmp.mapping.scroll_docs(4),
         ["<C-u>"] = cmp.mapping.scroll_docs(-4),
-        ["<C-e>"] = cmp.mapping.abort(),
+        ["<C-o>"] = cmp.mapping.abort(),
     }),
 
     sources = cmp.config.sources({
