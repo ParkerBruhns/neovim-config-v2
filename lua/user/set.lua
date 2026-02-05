@@ -1,4 +1,4 @@
-vop = vim.opt
+local vop = vim.opt
 
 vim.g.mapleader = " "
 

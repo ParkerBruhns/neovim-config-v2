@@ -1,4 +1,4 @@
-vim.g.mapleader = ' '
+vim.g.mapleader = " "
 
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 vim.keymap.set("i", "jk", "<Esc>")
@@ -14,16 +14,15 @@ vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
 --vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
 --vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
-
 -- Copy and Paste
-vim.keymap.set("n", "<leader>y", "\"+y")
-vim.keymap.set("v", "<leader>Y", "\"+y")
-vim.keymap.set("n", "<leader>Y", "\"+Y")
+vim.keymap.set("n", "<leader>y", '"+y')
+vim.keymap.set("v", "<leader>Y", '"+y')
+vim.keymap.set("n", "<leader>Y", '"+Y')
 
 -- IDK
-vim.keymap.set("n", "<leader>d", "\"_d")
-vim.keymap.set("v", "<leader>d", "\"_d")
-vim.keymap.set("x", "<leader>pz", "\"_dP")
+vim.keymap.set("n", "<leader>d", '"_d')
+vim.keymap.set("v", "<leader>d", '"_d')
+vim.keymap.set("x", "<leader>pz", '"_dP')
 
 -- Tab Shortcuts
 vim.keymap.set("n", "<leader>ti", vim.cmd.tabe)

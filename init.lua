@@ -1,2 +1,1 @@
-vim.deprecate = function() end
-require('user')
+require("user")
