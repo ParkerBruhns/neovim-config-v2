@@ -21,6 +21,6 @@ vop.scrolloff = 15
 vop.signcolumn = "no"
 vop.isfname:append("@-@")
 
-vop.updatetime = 50
+vop.updatetime = 20
 
 vop.colorcolumn = "70"

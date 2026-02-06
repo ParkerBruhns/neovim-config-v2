@@ -1,6 +1,6 @@
 vim.g.mapleader = " "
 
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+vim.keymap.set({ "n", "v" }, "<leader>pv", vim.cmd.Ex)
 vim.keymap.set("i", "jk", "<Esc>")
 
 -- Move lines
@@ -10,9 +10,8 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 -- Search tools
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
-vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
---vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
---vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+-- vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
+vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
 -- Copy and Paste
 vim.keymap.set("n", "<leader>y", '"+y')
