@@ -29,5 +29,8 @@ vim.keymap.set("n", "<leader>tn", vim.cmd.tabp)
 vim.keymap.set("n", "<leader>tp", vim.cmd.tabn)
 vim.keymap.set("n", "<leader>tc", vim.cmd.tabc)
 
+-- Folding
+vim.keymap.set("n", "+", vim.cmd.foldopen)
+vim.keymap.set("n", "-", vim.cmd.foldclose)
 -- Clipboard
 -- set clipboard = unnamedplus

@@ -1,0 +1,14 @@
+-- require("nvim-ufo").setup ()
+-- vim.opt.foldcolumn = "1"
+-- vim.opt.foldlevel = 99
+-- vim.opt.foldlevelstart = 99
+-- vim.opt.foldenable = true
+--
+-- vim.keymap.set("n", "zR", require("ufo").openAllFolds)
+-- vim.keymap.set("n", "zM", require("ufo").closeAllFolds)
+-- vim.keymap.set("n", "zK", function()
+--   local winid = require("ufo").peekFoldedLinesUnderCursor()
+--   if not winid then
+--     vim.lsp.buf.hoven()
+--   end
+-- end)

@@ -24,3 +24,4 @@ vop.isfname:append("@-@")
 vop.updatetime = 20
 
 vop.colorcolumn = "70"
+

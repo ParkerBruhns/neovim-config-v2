@@ -8,6 +8,8 @@ vim.call("plug#begin")
 -- LSP's, DAP's, and Autocomplete
 -- >> Dependencies << --
 Plug("neovim/nvim-lspconfig")
+Plug("neoclide/coc.nvim")
+Plug("kevinhwang91/promise-async")
 
 Plug("nvim-lua/plenary.nvim")
 Plug("williamboman/mason.nvim", { ["do"] = ":MasonUpdate" })
@@ -46,6 +48,9 @@ Plug("m4xshen/autoclose.nvim") -- Auto Closing Brackets and such
 
 Plug("mfussenegger/nvim-dap")
 Plug("mfussenegger/nvim-jdtls")
+
+-- Code Folding
+Plug("kevinhwang91/nvim-ufo")
 
 -- Fun Plugins
 Plug("ThePrimeagen/vim-be-good") -- Vim Practicer
