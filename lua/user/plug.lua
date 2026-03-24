@@ -45,6 +45,8 @@ Plug("rose-pine/nvim", { ["as"] = "rose-pine" })
 -- Visual Plugins
 Plug("numToStr/Comment.nvim") -- Comments
 Plug("m4xshen/autoclose.nvim") -- Auto Closing Brackets and such
+Plug("stevearc/dressing.nvim")
+Plug("nvim-flutter/flutter-tools.nvim") -- Flutter Plugin
 
 Plug("mfussenegger/nvim-dap")
 Plug("mfussenegger/nvim-jdtls")
