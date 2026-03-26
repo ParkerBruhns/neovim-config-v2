@@ -5,7 +5,7 @@ end
 
 configs.setup {
   -- A list of parser names, or "all" (the five listed parsers should always be installed)
-  ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "rust", "java" },
+  ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "rust", "java", "dart"},
 
   -- Install parsers synchronously (only applied to `ensure_installed`)
   sync_install = false,
@@ -24,4 +24,9 @@ configs.setup {
 
     -- NOTE: these are the names of the parsers and not the filetype. (for example if you want to
   },
+
+  indent = {
+    enable = true,
+    disable = { "dart" },
+  }
 }

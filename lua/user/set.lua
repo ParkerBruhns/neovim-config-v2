@@ -9,6 +9,7 @@ vop.tabstop = 2
 vop.softtabstop = 2
 vop.shiftwidth = 2
 vop.expandtab = true
+vop.smartindent = true
 
 vop.wrap = false
 
